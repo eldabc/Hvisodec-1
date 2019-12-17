@@ -1,0 +1,40 @@
+1 *- Control de stock, añadirle:
+	N lote: 
+		Cuando compre producto A lote numero. 
+		Cuando se haga la factura debe aparecer el n de lote de producto, ordenar por fecha.
+		(salir primero de los lotes más viejos).
+
+2 *- Impuestos
+	Quitar impustos actuales y agregar el impuesto del (Modelo 347)
+	Hacer un Informe en el que aparescan todos los clientes que en un periodo cerrado (Trimestres del año, Anual PDF) a los que se les ha facturado, ha comprado o se les ha vendido por mas de 3000 euros. 
+
+3 *- otra modificacion es que los productos deben tener una jerarquia, categoria 
+Compra cuando se aumenta el stock es decir PROVEEDORES
+Venta cuando se disminuye el stock es decir CLIENTES
+
+
+Notas: 
+	Factura Proveedor:
+		Flujos alternmos:
+			no hay flujo alternos para cuando faltan clientes para poder generar una factura. (raro)
+			""                                falta definir las series de las facturas, además de registrada debe encontrar al menos una como predeterminada "default_invoice"
+		
+		Validaciones:
+			edita factura sin campos de productos.
+
+
+Bien: 
+		Aumenta y Descuenta stock 
+
+
+
+NACTURAS PROVEEDORES	
+	N° DE LOTE SERÁ UNO POR CADA PRODUCTO
+
+FACTURAS CLIENTES	
+	SI SE TOMAS PRODUCTOS DE MÁS DE UN LOTE SE COLOCAN AMBOS NÚMEROS DE LOTE -> SÍ
+
+CATEGORIA
+	APARECERÁ EN LA FACTURA -> NO
+	SERÁ UN MODULO APARTE -> SÍ
+	
